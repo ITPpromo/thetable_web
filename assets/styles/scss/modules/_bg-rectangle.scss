@@ -1,0 +1,24 @@
+.bg-rectangle {
+  position: absolute;
+  right: 0;
+  top: -22px;
+  z-index: -1;
+  width: 100%;
+  overflow-x: hidden;
+  text-align: right;
+  img {
+    width: 800px;
+    max-width: 800px;
+    height: 1200px;
+  }
+  &--left {
+    @extend .bg-rectangle;
+    right: auto;
+    top: -400px;
+    left: 0;
+    text-align: left;
+  }
+  &--wrapper {
+    position: relative;
+  }
+}

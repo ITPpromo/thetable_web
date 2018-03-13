@@ -1,0 +1,14 @@
+.simple-form {
+  &--form {
+    @extend .header--form;
+  }
+  &--field {
+    @extend .header--field;
+    width: 100%;
+  }
+  &--button {
+    @extend .header--button;
+    width: 170px;
+    padding: 0 40px;
+  }
+}

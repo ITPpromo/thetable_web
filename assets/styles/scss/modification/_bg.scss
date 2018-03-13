@@ -1,0 +1,11 @@
+.bg {
+  &--blue {
+    background-color: #2f3f7e;
+  }
+  &--blue-light {
+    background-color: rgba($color: #2f3f7e, $alpha: .8);
+  }
+  &--pink {
+    background-color: #e9307f;
+  }
+}

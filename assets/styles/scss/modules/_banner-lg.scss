@@ -1,0 +1,95 @@
+.banner-lg {
+  width: 1335px;
+  max-width: 100%;
+  margin: 75px auto 0;
+  padding: 0 15px;
+  &--title {
+    margin-bottom: -16px;
+    line-height: 1;
+    text-align: center;
+    font-size: 115px;
+    font-weight: 900;
+    color: rgba(47, 63, 126, .05);
+  }
+  &--container {
+    position: relative;
+    display: flex;
+    background-size: cover;
+    padding: 100px 150px;
+    border-radius: 24px;
+  }
+  &--content {
+    width: 630px;
+    max-width: 100%;
+  }
+  &--content-right {
+    @extend .banner-lg--content;
+    width: 430px;
+  }
+  &--image {
+    position: absolute;
+    bottom: 0;
+    right: 116px;
+    max-width: 100%;
+  }
+  &--image-left {
+    @extend .banner-lg--image;
+    right: auto;
+    bottom: -155px;
+    left: 170px;
+  }
+  &--description {
+    margin-top: 20px;
+    color: rgba($color: #fff, $alpha: .26);
+  }
+  &--form {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  &--field {
+    height: 50px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    background-color: rgba($color: #fff, $alpha: .11);
+    color: rgba($color: #fff, $alpha: .45);
+    border-color: transparent;
+    transition: .3s;
+    &:focus {
+      border: 1px solid transparent;
+      background-color: rgba($color: #fff, $alpha: .25);
+    }
+    &::-webkit-input-placeholder {
+      color: rgba($color: #fff, $alpha: .45);
+    }
+    &:-ms-input-placeholder {
+      color: rgba($color: #fff, $alpha: .45);
+    }
+    &::placeholder {
+      color: rgba($color: #fff, $alpha: .45);
+    }
+  }
+  &--button {
+    height: 50px;
+    margin-bottom: 0;
+    padding: 0 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  &--scroll {
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 30px);
+  }
+  &--button-group {
+    margin-top: 40px;
+    a {
+      display: inline-block;
+      margin-right: 15px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

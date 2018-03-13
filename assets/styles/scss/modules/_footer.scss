@@ -1,0 +1,10 @@
+.footer {
+  padding: 30px 0;
+  margin-top: 85px;
+  border-radius: 27px 27px 0 0;
+  background: #2F3F7E;
+  &--text {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.26);
+  }
+}

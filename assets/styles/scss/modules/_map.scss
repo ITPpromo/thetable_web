@@ -1,0 +1,43 @@
+.map {
+  margin-top: 115px;
+  &--info {
+    position: relative;
+    width: 770px;
+    max-width: 100%;
+    margin: -106px auto 0;
+    padding: 45px 75px;
+    border-radius: 6px;
+    background: #FFFFFF;
+    box-shadow: 0 28px 42px 0 rgba(47, 63, 126, 0.06);
+  }
+  &--list {
+    position: relative;
+    margin: 0;
+    padding-left: 25px;
+    list-style: none;
+    &::before {
+      position: absolute;
+      top: 6px;
+      left: 0;
+    }
+  }
+  &--list-item {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
+  &--list-address {
+    &::before {
+      content: url('../../img/contact_Form_map.png');
+    }
+  }
+  &--list-phones {
+    &::before {
+      content: url('../../img/contact_Form_phone.png');
+    }
+  }
+  &--list-web {
+    &::before {
+      content: url('../../img/contact_form_site.png');
+    }
+  }
+}

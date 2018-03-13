@@ -1,0 +1,11 @@
+.is-active {
+  &.header--menu-item {
+    font-weight: 700;
+  }
+  &.pagination--item-number {
+    box-shadow:0 2px 0 0 rgba(47,63,126,0.22);
+  }
+  &.booking--schedule-line--item {
+    background-color: #e82f7f;
+  }
+}

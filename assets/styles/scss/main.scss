@@ -1,0 +1,24 @@
+@import 'foundation/settings';
+@import 'foundation/foundation';
+
+@include foundation-global-styles;
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-close-button;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-table;
+@include foundation-visibility-classes;
+
+@import "base/index";
+@import "layout/index";
+@import "modules/index";
+@import "state/index";
+@import "modification/index";
+@import "media/index";

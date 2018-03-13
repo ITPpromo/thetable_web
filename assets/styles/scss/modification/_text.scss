@@ -1,0 +1,14 @@
+.text {
+  &--lg {
+    font-size: 22px;
+  }
+  &--md {
+    font-size: 18px;
+  }
+  &--light {
+    font-weight: 100;
+  }
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}

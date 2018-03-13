@@ -1,0 +1,51 @@
+.mt {
+  &-20 {
+    margin-top: 20px;
+  }
+  &-40 {
+    margin-top: 40px;
+  }
+  &-220 {
+    margin-top: 220px;
+  }
+}
+
+.mb {
+  &-0 {
+    margin-bottom: 0;
+  }
+  &-35 {
+    margin-bottom: 35px;
+  }
+  &-20 {
+    margin-bottom: 20px;
+  }
+  &-15 {
+    margin-bottom: 15px;
+  }
+}
+
+.mr {
+  &-50 {
+    margin-right: 50px;
+  }
+  &-10 {
+    margin-right: 10px;
+  }
+  &-5 {
+    margin-right: 5px;
+  }
+}
+
+.pb {
+  &-15 {
+    padding-bottom: 15px;
+  }
+}
+
+.w {
+  &-430 {
+    width: 430px;
+    max-width: 100%;
+  }
+}

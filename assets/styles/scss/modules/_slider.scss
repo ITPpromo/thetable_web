@@ -1,0 +1,16 @@
+.slider {
+  &--nav {
+    position: absolute;
+    top: calc(50% - 79px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &--prev {
+    margin-left: -48px;
+  }
+  &--next {
+    margin-right: -48px;
+  }
+}

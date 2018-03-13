@@ -1,0 +1,117 @@
+.booking {
+  &--list {
+    flex: 0 0 50%;
+  }
+  &--map {
+    flex: 0 0 calc(50% - 12px);
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  &--item {
+    display: flex;
+    align-items: stretch;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 10px 0;
+    background-color: #fff;
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &--item-img {
+    flex: 0 0 240px;
+    width: 240px;
+    height: 260px;
+    margin-right: 25px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  &--reward {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 16px;
+  }
+  &--reward-img {
+    margin-right: 12px;
+  }
+  &--reward-text {
+    line-height: 1.3;
+  }
+  &--schedule {
+    margin-top: 10px;
+  }
+  &--schedule-hours {
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+  &--schedule-hours--item {
+    position: relative;
+    margin: 0 8px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 22px;
+      display: block;
+      height: 14px;
+      width: 1px;
+      background-color: #3e5e99;
+    }
+  }
+  &--schedule-time {
+    display: flex;
+    padding: 0 17px 0 14px;
+    justify-content: space-around;
+    list-style: none;
+    margin: -5px 0 0;
+  }
+  &--schedule-time--item {
+    position: relative;
+    font-size: 12px;
+    color: rgba($color: #b9cbe0, $alpha: 1.0);
+    &::after {
+      @extend .booking--schedule-hours--item::after;
+      height: 4px;
+      top: 17px;
+    }
+  }
+  &--schedule-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17px 0 14px;
+    margin: 15px 0;
+    list-style: none;
+  }
+  &--schedule-line--item {
+    height: 4px;
+    background-color: #dce5ee;
+  }
+  &--plan-img {
+    margin: 6px 6px 6px 0;
+    margin-top: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 790px;
+      height: 333px;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+  }
+  &--plan-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 10px;
+  }
+}
