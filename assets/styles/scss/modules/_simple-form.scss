@@ -11,4 +11,10 @@
     width: 170px;
     padding: 0 40px;
   }
+  &--link {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgba($color: #2f3f7e, $alpha: .5);
+  }
 }

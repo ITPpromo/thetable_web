@@ -51,5 +51,11 @@
   &--bottom-item {
     color:#2f3f7e;
     margin: 0 47px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

@@ -73,6 +73,17 @@
   .card--more {
     display: none;
   }
+  .registration--card-full {
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+  .registration--form-wrapper {
+    flex: auto;
+    margin-top: 20px;
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -164,5 +175,8 @@
   }
   .map {
     margin-top: 50px;
+  }
+  .registration--container {
+    min-height: auto;
   }
 }
