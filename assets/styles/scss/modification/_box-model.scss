@@ -35,11 +35,20 @@
   &-5 {
     margin-right: 5px;
   }
+  &-0 {
+    margin-right: 0;
+  }
 }
 
 .pb {
   &-15 {
     padding-bottom: 15px;
+  }
+}
+
+.lh{
+  &-sm {
+    line-height: 1.2;
   }
 }
 
