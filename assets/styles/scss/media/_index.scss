@@ -61,7 +61,11 @@
   .card--more .small {
     font-size: 35px;
   }
-  .registration--profile .registration--card {
+  .registration--card {
+    margin-bottom: 10px;
+  }
+  .registration--profile,
+  .registration--sign {
     width: 500px;
     max-width: 100%;
     margin: 0 auto 20px;

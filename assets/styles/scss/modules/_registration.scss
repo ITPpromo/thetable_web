@@ -11,6 +11,19 @@
       padding: 20px;
     }
   }
+  &--sign {
+    width: 900px;
+    max-width: 100%;
+    .registration--card {
+      padding: 20px;
+    }
+    .registration--qr {
+      padding: 60px;
+    }
+    .registration--card-sign {
+      padding: 47px 20px;
+    }
+  }
   &--container {
     min-height: 80vh;
   }
@@ -19,6 +32,9 @@
     padding: 30px 35px;
     border-radius: 6px;
     background: #ffffff;
+  }
+  &--card-sign {
+    @extend .registration--card;
   }
   &--card-full {
     @extend .registration--card;
@@ -154,5 +170,8 @@
         flex: 0 0 60%
       }
     }
+  }
+  &--qr {
+    margin-top: 10px;
   }
 }

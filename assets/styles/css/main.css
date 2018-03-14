@@ -3535,11 +3535,20 @@ h3 {
   .registration--profile {
     width: 970px;
     max-width: 100%; }
-    .registration--profile .registration--card, .registration--profile .registration--card-full {
+    .registration--profile .registration--card, .registration--profile .registration--card-sign, .registration--profile .registration--card-full {
       padding: 20px; }
+  .registration--sign {
+    width: 900px;
+    max-width: 100%; }
+    .registration--sign .registration--card, .registration--sign .registration--card-sign, .registration--sign .registration--card-full {
+      padding: 20px; }
+    .registration--sign .registration--qr {
+      padding: 60px; }
+    .registration--sign .registration--card-sign {
+      padding: 47px 20px; }
   .registration--container {
     min-height: 80vh; }
-  .registration--card, .registration--card-full {
+  .registration--card, .registration--card-sign, .registration--card-full {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 30px 35px;
@@ -3688,6 +3697,8 @@ h3 {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
       flex: 0 0 60%; }
+  .registration--qr {
+    margin-top: 10px; }
 
 .is-active.header--menu-item {
   font-weight: 700; }
@@ -3823,7 +3834,10 @@ h3 {
     line-height: 1.7; }
   .card--more .small {
     font-size: 35px; }
-  .registration--profile .registration--card, .registration--profile .registration--card-full {
+  .registration--card, .registration--card-sign, .registration--card-full {
+    margin-bottom: 10px; }
+  .registration--profile,
+  .registration--sign {
     width: 500px;
     max-width: 100%;
     margin: 0 auto 20px; }
