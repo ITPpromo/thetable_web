@@ -1,4 +1,7 @@
 .mt {
+  &-10 {
+    margin-top: 10px;
+  }
   &-20 {
     margin-top: 20px;
   }
@@ -22,6 +25,9 @@
   }
   &-15 {
     margin-bottom: 15px;
+  }
+  &-10 {
+    margin-bottom: 10px;
   }
 }
 

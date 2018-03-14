@@ -68,8 +68,6 @@
   }
   .registration--form {
     width: 100%;
-    padding-left: 0;
-    margin-top: 15px;
   }
 }
 
@@ -191,5 +189,15 @@
   }
   .registration--avatar {
     width: 100%;
+  }
+  .registration--form {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  .registration--button-group {
+    flex-direction: column;
+    .button {
+      width: 100%;
+    }
   }
 }

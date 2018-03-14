@@ -3535,6 +3535,8 @@ h3 {
   .registration--profile {
     width: 970px;
     max-width: 100%; }
+    .registration--profile .registration--card, .registration--profile .registration--card-full {
+      padding: 20px; }
   .registration--container {
     min-height: 80vh; }
   .registration--card, .registration--card-full {
@@ -3620,8 +3622,11 @@ h3 {
     .registration--avatar a {
       padding-top: 21px; }
   .registration--form {
-    padding-left: 20px; }
-  .registration--form-group {
+    padding-left: 20px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .registration--form-group, .registration--form-group-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3629,8 +3634,10 @@ h3 {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 8px; }
-    .registration--form-group .registration--field {
+    .registration--form-group .registration--field, .registration--form-group-3 .registration--field {
       margin-bottom: 0; }
+  .registration--form-group-3 .registration--form-tag {
+    padding: 6px 18px; }
   .registration--field {
     height: auto;
     margin-bottom: 8px;
@@ -3655,9 +3662,32 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 6px 28px;
+    margin: 0 4px;
     border: 1px solid #2f3f7e;
     border-radius: 24px;
     line-height: 1.2; }
+    .registration--form-tag:last-of-type {
+      margin-right: 0; }
+  .registration--button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px; }
+    .registration--button-group .button:first-of-type {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 36%;
+      flex: 0 0 36%; }
+    .registration--button-group .button:last-of-type {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+      flex: 0 0 60%; }
 
 .is-active.header--menu-item {
   font-weight: 700; }
@@ -3681,6 +3711,9 @@ h3 {
 .clr--white {
   color: #fff; }
 
+.mt-10 {
+  margin-top: 10px; }
+
 .mt-20 {
   margin-top: 20px; }
 
@@ -3701,6 +3734,9 @@ h3 {
 
 .mb-15 {
   margin-bottom: 15px; }
+
+.mb-10 {
+  margin-bottom: 10px; }
 
 .mr-50 {
   margin-right: 50px; }
@@ -3792,9 +3828,7 @@ h3 {
     max-width: 100%;
     margin: 0 auto 20px; }
   .registration--form {
-    width: 100%;
-    padding-left: 0;
-    margin-top: 15px; } }
+    width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .card--wrapper-3 .card, .card--wrapper-3 .card--lg, .card--wrapper-3 .card--md, .card--wrapper-3 .card--post,
@@ -3899,4 +3933,14 @@ h3 {
   .registration--container {
     min-height: auto; }
   .registration--avatar {
-    width: 100%; } }
+    width: 100%; }
+  .registration--form {
+    padding-left: 0;
+    margin-top: 15px; }
+  .registration--button-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .registration--button-group .button {
+      width: 100%; } }
