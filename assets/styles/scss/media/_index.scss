@@ -73,6 +73,85 @@
   .registration--form {
     width: 100%;
   }
+  .card-filter {
+    margin: 10px 0 0;
+    flex: auto;
+  }
+  .card-filter--search {
+    flex: auto;
+  }
+  .card-filter--nav {
+    flex: 0 auto;
+  }
+  .menu--wrapper {
+    flex-wrap: wrap;
+  }
+  .menu--single {
+    flex: 0 1 370px;
+    margin: 10px auto 0;
+  }
+  .menu--type {
+    flex: 0 0 calc(40% - 5px);
+  }
+  .menu--list {
+    flex: 0 0 calc(60% - 5px);
+  }
+  .header--bottom-item {
+    display: block;
+    margin: 5px 0;
+  }
+  .header--bottom-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header--bottom-menu-open {
+    display: inline-block;
+  }
+  .header--bottom-nav {
+    text-align: center;
+  }
+  .booking--schedule-hours {
+    justify-content: space-between;
+  }
+  .booking--plan-img {
+    margin-right: 10px;
+    flex: 0 0 50%;
+  }
+  .card-filter--search {
+    flex: auto;
+  }
+  .card-filter--small {
+    flex: 0 0 calc(33.3% - 6px);
+  }
+  .booking--list {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .booking--map {
+    flex: auto;
+    width: 100%;
+  }
+  #booking_map {
+    height: 450px;
+  }
+  .pagination {
+    margin-bottom: 30px;
+  }
+  .order--list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .order--list-card {
+    flex: 0 0 calc(33.3% - 10px);
+  }
+  .booking--schedule {
+    min-width: 788px;
+  }
+  .card-filter--schedule {
+    overflow-x: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -125,6 +204,44 @@
   .footer--text {
     margin-top: 10px;
     text-align: center;
+  }
+  .menu--type,
+  .menu--list {
+    flex: 0 0 100%;
+  }
+  .card-filter {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .booking--plan-img {
+    flex: auto;
+    margin-right: 0;
+  }
+  .card-filter--small {
+    flex: 0 0 100%;
+  }
+  .booking--item {
+    flex-direction: column;
+  }
+  .tag--list-rounded,
+  .tag--list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .order--list-card {
+    flex: 0 0 100%;
+  }
+  .order--card-restourant,
+  .order--card-image {
+    flex: 0 0 100%;
+    margin: 5px 0;
+  }
+  .menu--list-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .order--menu {
+    margin-right: 0;
   }
 }
 
@@ -203,5 +320,14 @@
     .button {
       width: 100%;
     }
+  }
+  .menu--list {
+    .menu--card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .menu--list-img {
+    margin-bottom: 10px;
   }
 }

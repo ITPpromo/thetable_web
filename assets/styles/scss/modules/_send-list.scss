@@ -1,0 +1,8 @@
+.send-list {
+  height: 196px;
+  margin-top: 20px;
+  overflow: auto;
+  &--item {
+    margin: 8px 0;
+  }
+}

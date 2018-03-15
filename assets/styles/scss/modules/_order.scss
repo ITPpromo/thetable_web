@@ -1,0 +1,40 @@
+.order {
+  &--list-card {
+    @extend .menu--type-card;
+    position: relative;
+  }
+  &--card-restourant {
+    flex: 1 1;
+    padding: 22px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 5px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &--card-image {
+    @extend .order--card-restourant;
+    padding: 0;
+    overflow: hidden;
+    flex: 38.8%;
+  }
+  &--menu {
+    flex: 0 0 66.3%;
+    margin-right: 5px;
+    .order--card-restourant {
+      margin: 5px 0 10px 0;
+    }
+  }
+  &--sidebar {
+    flex: 1 1;
+    margin-left: 5px;
+    .order--card-restourant {
+      margin: 5px 0 10px 0;
+    }
+  }
+}

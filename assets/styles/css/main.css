@@ -2867,10 +2867,7 @@ h3 {
   .header--form, .simple-form--form {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    display: flex; }
   .header--menu {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -2890,7 +2887,8 @@ h3 {
     height: 37px;
     margin-right: 10px;
     margin-bottom: 0;
-    border-color: #dfe2ed; }
+    border-color: #dfe2ed;
+    font-size: 13px; }
   .header--button, .simple-form--button {
     height: 37px;
     margin-bottom: 0; }
@@ -2915,6 +2913,9 @@ h3 {
       margin-left: 0; }
     .header--bottom-item:last-of-type {
       margin-right: 0; }
+  .header--bottom-menu-open {
+    display: none;
+    width: 36px; }
 
 .button {
   display: -webkit-inline-box;
@@ -3302,6 +3303,8 @@ h3 {
     flex: auto 0;
     padding: 12px;
     color: rgba(47, 63, 126, 0.5); }
+  .card-filter--item {
+    margin: 0 10px; }
 
 .simple-form--field {
   width: 100%; }
@@ -3371,7 +3374,8 @@ h3 {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-right: 16px; }
+  margin-right: 16px;
+  margin-bottom: 5px; }
 
 .booking--reward-img {
   margin-right: 12px; }
@@ -3481,7 +3485,9 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .tag--list::before {
     content: '';
     display: inline-block;
@@ -3504,6 +3510,8 @@ h3 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 20px; }
   .pagination--item, .pagination--item-number {
     display: -webkit-inline-box;
@@ -3700,6 +3708,123 @@ h3 {
   .registration--qr {
     margin-top: 10px; }
 
+.menu {
+  margin-top: 10px; }
+  .menu--list {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(40% - 10px);
+    flex: 0 0 calc(40% - 10px); }
+  .menu--single {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(32% - 10px);
+    flex: 0 0 calc(32% - 10px); }
+  .menu--type {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(28% - 10px);
+    flex: 0 0 calc(28% - 10px); }
+  .menu--card, .menu--type-card, .order--list-card {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #fff; }
+  .menu--type-card, .order--list-card {
+    padding: 20px 30px; }
+    .menu--type-card img, .order--list-card img {
+      margin-right: 25px; }
+    .menu--type-card:hover, .order--list-card:hover {
+      -webkit-box-shadow: 0 2px 1px 0 rgba(47, 63, 126, 0.21);
+      box-shadow: 0 2px 1px 0 rgba(47, 63, 126, 0.21); }
+  .menu--list-price {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700; }
+  .menu--list-img {
+    width: 118px;
+    height: 90px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px; }
+  .menu--list-text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    padding-right: 10px; }
+  .menu--single-img {
+    border-radius: 6px; }
+  .menu--single-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5; }
+  .menu--single-body {
+    padding: 15px; }
+  .menu--type-wait {
+    margin-bottom: 0;
+    font-size: 16px; }
+
+.order--list-card {
+  position: relative; }
+
+.order--card-restourant, .order--card-image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  padding: 22px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 5px; }
+  .order--card-restourant:first-of-type, .order--card-image:first-of-type {
+    margin-left: 0; }
+  .order--card-restourant:last-of-type, .order--card-image:last-of-type {
+    margin-right: 0; }
+
+.order--card-image {
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-flex: 38.8%;
+  -ms-flex: 38.8%;
+  flex: 38.8%; }
+
+.order--menu {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66.3%;
+  flex: 0 0 66.3%;
+  margin-right: 5px; }
+  .order--menu .order--card-restourant, .order--menu .order--card-image {
+    margin: 5px 0 10px 0; }
+
+.order--sidebar {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  margin-left: 5px; }
+  .order--sidebar .order--card-restourant, .order--sidebar .order--card-image {
+    margin: 5px 0 10px 0; }
+
+.send-list {
+  height: 196px;
+  margin-top: 20px;
+  overflow: auto; }
+  .send-list--item {
+    margin: 8px 0; }
+
+.scroll::-webkit-scrollbar {
+  background: #fff;
+  width: 2px;
+  height: 2px; }
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #2f3f7e; }
+
+.scroll::-webkit-scrollbar-track {
+  width: 1px;
+  height: 1px;
+  background: #f8f9ff; }
+
 .is-active.header--menu-item {
   font-weight: 700; }
 
@@ -3709,6 +3834,25 @@ h3 {
 
 .is-active.booking--schedule-line--item {
   background-color: #e82f7f; }
+
+.is-active.menu--type-card, .is-active.order--list-card {
+  -webkit-box-shadow: 0 2px 1px 0 rgba(47, 63, 126, 0.21);
+  box-shadow: 0 2px 1px 0 rgba(47, 63, 126, 0.21); }
+  .is-active.menu--type-card .menu--type-wait, .is-active.order--list-card .menu--type-wait {
+    color: #0eb0a2; }
+
+.is-active.order--list-card::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #2f3f7e; }
+
+.is-active.header--bottom-item {
+  font-weight: 700; }
 
 .bg--blue {
   background-color: #2f3f7e; }
@@ -3722,8 +3866,14 @@ h3 {
 .clr--white {
   color: #fff; }
 
+.clr--niagara {
+  color: #0eb0a2; }
+
 .mt-10 {
   margin-top: 10px; }
+
+.mt-15 {
+  margin-top: 15px; }
 
 .mt-20 {
   margin-top: 20px; }
@@ -3752,6 +3902,9 @@ h3 {
 .mr-50 {
   margin-right: 50px; }
 
+.mr-15 {
+  margin-right: 15px; }
+
 .mr-10 {
   margin-right: 10px; }
 
@@ -3771,6 +3924,9 @@ h3 {
   width: 430px;
   max-width: 100%; }
 
+.text--simple {
+  font-size: 16px; }
+
 .text--lg {
   font-size: 22px; }
 
@@ -3781,6 +3937,13 @@ h3 {
   font-weight: 100; }
 
 .text--wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.image--bordered {
+  border-radius: 6px; }
+
+.flex-wrap {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -3842,7 +4005,100 @@ h3 {
     max-width: 100%;
     margin: 0 auto 20px; }
   .registration--form {
-    width: 100%; } }
+    width: 100%; }
+  .card-filter, .card-filter--nav {
+    margin: 10px 0 0;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto; }
+  .card-filter--search {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto; }
+  .card-filter--nav {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 auto;
+    flex: 0 auto; }
+  .menu--wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .menu--single {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 370px;
+    flex: 0 1 370px;
+    margin: 10px auto 0; }
+  .menu--type {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(40% - 5px);
+    flex: 0 0 calc(40% - 5px); }
+  .menu--list {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(60% - 5px);
+    flex: 0 0 calc(60% - 5px); }
+  .header--bottom-item {
+    display: block;
+    margin: 5px 0; }
+  .header--bottom-menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header--bottom-menu-open {
+    display: inline-block; }
+  .header--bottom-nav {
+    text-align: center; }
+  .booking--schedule-hours {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .booking--plan-img {
+    margin-right: 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; }
+  .card-filter--search {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto; }
+  .card-filter--small {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(33.3% - 6px);
+    flex: 0 0 calc(33.3% - 6px); }
+  .booking--list {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%; }
+  .booking--map {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    width: 100%; }
+  #booking_map {
+    height: 450px; }
+  .pagination {
+    margin-bottom: 30px; }
+  .order--list-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .order--list-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(33.3% - 10px);
+    flex: 0 0 calc(33.3% - 10px); }
+  .booking--schedule {
+    min-width: 788px; }
+  .card-filter--schedule {
+    overflow-x: auto; } }
 
 @media screen and (max-width: 768px) {
   .card--wrapper-3 .card, .card--wrapper-3 .card--lg, .card--wrapper-3 .card--md, .card--wrapper-3 .card--post,
@@ -3888,7 +4144,49 @@ h3 {
     padding: 20px 20px 40px; }
   .footer--text {
     margin-top: 10px;
-    text-align: center; } }
+    text-align: center; }
+  .menu--type,
+  .menu--list {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .card-filter, .card-filter--nav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
+  .booking--plan-img {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    margin-right: 0; }
+  .card-filter--small {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .booking--item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .tag--list-rounded,
+  .tag--list {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .order--list-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .order--card-restourant, .order--card-image,
+  .order--card-image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    margin: 5px 0; }
+  .menu--list-text {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .order--menu {
+    margin-right: 0; } }
 
 @media screen and (max-width: 425px) {
   .header--menu-item,
@@ -3957,4 +4255,14 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column; }
     .registration--button-group .button {
-      width: 100%; } }
+      width: 100%; }
+  .menu--list .menu--card, .menu--list .menu--type-card, .menu--list .order--list-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .menu--list-img {
+    margin-bottom: 10px; } }

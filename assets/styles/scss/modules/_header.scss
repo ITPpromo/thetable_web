@@ -6,7 +6,6 @@
   }
   &--form {
     display: flex;
-    align-items: center;
   }
   &--menu {
     flex: 1;
@@ -30,6 +29,7 @@
     margin-right: 10px;
     margin-bottom: 0;
     border-color: #dfe2ed;
+    font-size: 13px;
   }
   &--button {
     height: 37px;
@@ -57,5 +57,9 @@
     &:last-of-type {
       margin-right: 0;
     }
+  }
+  &--bottom-menu-open {
+    display: none;
+    width: 36px;
   }
 }

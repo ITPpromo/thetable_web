@@ -8,4 +8,25 @@
   &.booking--schedule-line--item {
     background-color: #e82f7f;
   }
+  &.menu--type-card {
+    box-shadow:0 2px 1px 0 rgba(47,63,126,0.21);
+    .menu--type-wait {
+      color: #0eb0a2;
+    }
+  }
+  &.order--list-card{
+    &::after {
+      content: '';
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: #2f3f7e;
+    }
+  }
+  &.header--bottom-item {
+    font-weight: 700;
+  }
 }

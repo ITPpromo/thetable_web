@@ -15,6 +15,7 @@
   &--list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     &::before {
       content: '';
       display: inline-block;

@@ -1,0 +1,61 @@
+.menu {
+  margin-top: 10px;
+  &--list {
+    flex: 0 0 calc(40% - 10px);
+  }
+  &--single {
+    flex: 0 0 calc(32% - 10px);
+  }
+  &--type {
+    flex: 0 0 calc(28% - 10px);
+  }
+  &--card {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  &--type-card {
+    @extend .menu--card;
+    padding: 20px 30px;
+    img {
+      margin-right: 25px;
+    }
+    &:hover {
+      box-shadow:0 2px 1px 0 rgba(47,63,126,0.21);
+    }
+  }
+  &--list-price {
+    align-self: flex-start;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &--list-img {
+    width: 118px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+  }
+  &--list-text {
+    flex: 1 1;
+    padding-right: 10px;
+  }
+  &--single-img {
+    border-radius: 6px;
+  }
+  &--single-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &--single-body {
+    padding: 15px;
+  }
+  &--type-wait {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}

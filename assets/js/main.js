@@ -29,15 +29,20 @@
     })
   }
 
+  $('.banner-lg--scroll').on("click", function (e) {
+    e.preventDefault();
+    const id = $(this).attr('href'),
+      top = $(id).offset().top;
+  
+    $('body,html').animate({ scrollTop: top }, 800);
+  });
+
+  $('.header--bottom-menu-open').on('click', (e) => {
+    e.preventDefault();
+    $('.header--bottom-menu').slideToggle();
+  })
+
 })()
-
-$('.banner-lg--scroll').on("click", function (e) {
-  e.preventDefault();
-  const id = $(this).attr('href'),
-    top = $(id).offset().top;
-
-  $('body,html').animate({ scrollTop: top }, 800);
-});
 
 /*--------------
 / Google Map

@@ -30,15 +30,20 @@
       navText: ['<img src="./assets/img/arrow_left.png" />', '<img src="./assets/img/arrow_rigth.png" />']
     });
   }
+
+  $('.banner-lg--scroll').on("click", function (e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+
+    $('body,html').animate({ scrollTop: top }, 800);
+  });
+
+  $('.header--bottom-menu-open').on('click', function (e) {
+    e.preventDefault();
+    $('.header--bottom-menu').slideToggle();
+  });
 })();
-
-$('.banner-lg--scroll').on("click", function (e) {
-  e.preventDefault();
-  var id = $(this).attr('href'),
-      top = $(id).offset().top;
-
-  $('body,html').animate({ scrollTop: top }, 800);
-});
 
 /*--------------
 / Google Map
